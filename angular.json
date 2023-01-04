@@ -27,7 +27,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss",
+              "node_modules/@freud-ds/web-components/scss/styles.scss",
+              "node_modules/@freud-ds/grid/scss/grid.scss",
+              "node_modules/@freud-ds/web-components/scss/typography.scss"
             ],
             "scripts": []
           },
@@ -94,7 +97,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss",
+              "node_modules/@freud-ds/grid/scss/grid.scss"
             ],
             "scripts": []
           }

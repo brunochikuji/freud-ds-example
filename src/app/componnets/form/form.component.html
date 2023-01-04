@@ -1,0 +1,20 @@
+<h2>Form</h2>
+<form [formGroup]="formGroup">
+    <div class="freud-row">
+        <div class="freud-col-12">
+            <freud-input-text formControlName="name" label="Name" [bgColor]="true"></freud-input-text>
+        </div>
+        <div class="freud-col-12">
+            <freud-input-text formControlName="email" label="Email" type="email" [bgColor]="true"></freud-input-text>
+        </div>
+        <div class="freud-col-12">
+            <freud-button [disabled]="formGroup.invalid" [bgColor]="true">Send</freud-button>
+        </div>
+        <div class="freud-col-12">
+            <freud-card [header]="'Form Result'">
+                <p>Valid: {{formGroup.valid}}</p>
+                <p>Value: {{formGroup.value | json}}</p>
+            </freud-card>
+        </div>
+    </div>
+</form>
